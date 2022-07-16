@@ -1,8 +1,9 @@
 import React from 'react'
-import {useForm} from 'react-hook-form'
+import {useForm} from 'react-hook-form';
+import List from './List';
 
 const Forms = () => {
-    const[register, handleSubmit, resetField]=useForm();
+    const{register, handleSubmit, resetField}=useForm();
 
     const onSubmit = (data)=> { 
         console.log(data)
@@ -31,6 +32,7 @@ const Forms = () => {
                 </div>
             </div>
         </form>
+        <List></List>
     </div>
   )
 }
